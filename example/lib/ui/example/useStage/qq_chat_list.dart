@@ -18,7 +18,7 @@ import '../../../other/expanded_viewport.dart';
 class QQChatList extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
+    // implement createState
     return _QQChatListState();
   }
 }
@@ -56,13 +56,13 @@ class _QQChatListState extends State<QQChatList> {
 
   @override
   void initState() {
-    // TODO: implement initState
+    // implement initState
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    // implement build
     return CupertinoApp(
       home: RefreshConfiguration.copyAncestor(
         context: context,
@@ -183,7 +183,7 @@ class _QQChatListState extends State<QQChatList> {
                           margin: EdgeInsets.all(10.0),
                         ),
                       ),
-                      RaisedButton(
+                      MaterialButton(
                         child: Text("发送"),
                         color: Colors.blueAccent,
                         onPressed: () {
@@ -222,7 +222,7 @@ class _MessageItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    // implement build
     return Container(
       margin: EdgeInsets.only(top: 10.0),
       child: Wrap(

@@ -100,12 +100,13 @@ class FillEmptyCustomScrollView extends prefix0.CustomScrollView {
   }
 }
 
+// ignore: must_be_immutable
 class ForceFullExample extends StatelessWidget {
   RefreshController _refreshController = RefreshController();
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    // implement build
     return SmartRefresher(
       controller: _refreshController,
       enablePullUp: true,

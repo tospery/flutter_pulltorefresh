@@ -28,7 +28,7 @@ class IndicatorActivity extends StatefulWidget {
 
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
+    // implement createState
     return _IndicatorActivityState();
   }
 }
@@ -49,7 +49,7 @@ class _IndicatorActivityState extends State<IndicatorActivity> {
 
   @override
   void initState() {
-    // TODO: implement initState
+    // implement initState
     _scrollController = new ScrollController();
     _refreshController = RefreshController();
     Future.delayed(Duration(milliseconds: 3000)).then((_) {
@@ -62,14 +62,14 @@ class _IndicatorActivityState extends State<IndicatorActivity> {
 
   @override
   void dispose() {
-    // TODO: implement dispose
+    // implement dispose
     _refreshController.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    // implement build
     return Scaffold(
       appBar: AppBar(
         // Here we take the value from the MyHomePage object that was created by

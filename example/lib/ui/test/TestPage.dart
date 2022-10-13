@@ -71,27 +71,19 @@ class _TestPageState extends State<TestPage>
             BottomNavigationBarItem(
                 icon: Icon(Icons.home,
                     color: tabIndex == 0 ? Colors.blue : Colors.grey),
-                title: Text('Example1',
-                    style: TextStyle(
-                        color: tabIndex == 0 ? Colors.blue : Colors.grey))),
+                label: 'Example1'),
             BottomNavigationBarItem(
                 icon: Icon(Icons.cloud,
                     color: tabIndex == 1 ? Colors.blue : Colors.grey),
-                title: Text('Example2',
-                    style: TextStyle(
-                        color: tabIndex == 1 ? Colors.blue : Colors.grey))),
+                label: 'Example2'),
             BottomNavigationBarItem(
                 icon: Icon(Icons.call,
                     color: tabIndex == 2 ? Colors.blue : Colors.grey),
-                title: Text('Example3',
-                    style: TextStyle(
-                        color: tabIndex == 2 ? Colors.blue : Colors.grey))),
+                label: 'Example3'),
             BottomNavigationBarItem(
                 icon: Icon(Icons.transform,
                     color: tabIndex == 3 ? Colors.blue : Colors.grey),
-                title: Text('Example4',
-                    style: TextStyle(
-                        color: tabIndex == 3 ? Colors.blue : Colors.grey))),
+                label: 'Example4'),
           ],
           onTap: (index) {
             _pageController.jumpToPage(index);
@@ -106,7 +98,7 @@ class _TestPageState extends State<TestPage>
 
   @override
   void initState() {
-    // TODO: implement initState
+    // implement initState
     _pageController = PageController();
     views = [
       Test1(key: example1Key),

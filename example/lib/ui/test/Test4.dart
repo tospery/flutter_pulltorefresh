@@ -22,12 +22,12 @@ class Test4State extends State<Test4> with TickerProviderStateMixin {
   void _getDatas() {
     data.add(Row(
       children: <Widget>[
-        FlatButton(
+        TextButton(
             onPressed: () {
               _refreshController.requestRefresh();
             },
             child: Text("请求刷新")),
-        FlatButton(
+        TextButton(
             onPressed: () {
               _refreshController.requestLoading();
             },
@@ -59,7 +59,7 @@ class Test4State extends State<Test4> with TickerProviderStateMixin {
 
   @override
   void initState() {
-    // TODO: implement initState
+    // implement initState
     // for test #68 true-> false ->true
 //    Future.delayed(Duration(milliseconds: 3000), () {
 //      _enablePullDown = false;
@@ -124,7 +124,7 @@ class Test4State extends State<Test4> with TickerProviderStateMixin {
 
   @override
   void dispose() {
-    // TODO: implement dispose
+    // implement dispose
     super.dispose();
   }
 
@@ -153,13 +153,13 @@ class Test4State extends State<Test4> with TickerProviderStateMixin {
                   Center(
                     child: Row(
                       children: <Widget>[
-                        RaisedButton(
+                        ElevatedButton(
                           child: Text("主动刷新(移动)"),
                           onPressed: () {
                             _refreshController.requestRefresh();
                           },
                         ),
-                        RaisedButton(
+                        ElevatedButton(
                           child: Text("主动加载"),
                           onPressed: () {
                             _refreshController.requestLoading();
@@ -193,8 +193,7 @@ class Test4State extends State<Test4> with TickerProviderStateMixin {
     );
   }
 
-  @override
-  // TODO: implement wantKeepAlive
+  // implement wantKeepAlive
   bool get wantKeepAlive => false;
 }
 
@@ -206,7 +205,7 @@ class CirclePainter extends CustomClipper<Path> {
 
   @override
   Path getClip(Size size) {
-    // TODO: implement getClip
+    // implement getClip
     final path = Path();
     if (!up) path.moveTo(0.0, size.height);
     path.cubicTo(
@@ -222,7 +221,7 @@ class CirclePainter extends CustomClipper<Path> {
 
   @override
   bool shouldReclip(CustomClipper oldClipper) {
-    // TODO: implement shouldReclip
+    // implement shouldReclip
     return oldClipper != this;
   }
 }
@@ -230,7 +229,7 @@ class CirclePainter extends CustomClipper<Path> {
 class RefreshListView extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
+    // implement createState
     return _RefreshListViewState();
   }
 
@@ -245,7 +244,7 @@ class _RefreshListViewState extends State<RefreshListView> {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    // implement build
     return show
         ? CustomScrollView(
             slivers: widget.slivers,

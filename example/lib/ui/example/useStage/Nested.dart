@@ -42,7 +42,7 @@ class NestedRefreshState extends State<NestedRefresh>
 
   @override
   void initState() {
-    // TODO: implement initState
+    // implement initState
     _getDatas();
     _refreshController = RefreshController(initialRefresh: true);
     super.initState();
@@ -99,7 +99,7 @@ class NestedRefreshState extends State<NestedRefresh>
 class RefreshListView extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
+    // implement createState
     return _RefreshListViewState();
   }
 }
@@ -166,7 +166,7 @@ class _RefreshListViewState extends State<RefreshListView> {
   // don't forget to dispose refreshController
   @override
   void dispose() {
-    // TODO: implement dispose
+    // implement dispose
     _refreshController.dispose();
     super.dispose();
   }

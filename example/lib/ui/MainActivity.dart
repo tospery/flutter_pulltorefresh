@@ -17,7 +17,7 @@ class MainActivity extends StatefulWidget {
 
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
+    // implement createState
     return _MainActivityState();
   }
 }
@@ -46,7 +46,7 @@ class _MainActivityState extends State<MainActivity>
 
   @override
   void initState() {
-    // TODO: implement initState
+    // implement initState
 
     super.initState();
     _tabController = TabController(length: 6, vsync: this);
@@ -62,7 +62,7 @@ class _MainActivityState extends State<MainActivity>
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    // implement build
     return ResideMenu.scaffold(
       controller: _menuController,
       enable3dRotate: true,

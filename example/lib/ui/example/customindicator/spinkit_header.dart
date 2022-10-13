@@ -22,7 +22,7 @@ import 'package:pull_to_refresh/pull_to_refresh.dart';
 class CustomHeaderExample extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
+    // implement createState
     return _CustomHeaderExampleState();
   }
 }
@@ -35,7 +35,7 @@ class _CustomHeaderExampleState extends State<CustomHeaderExample>
   int count = 20;
   @override
   void initState() {
-    // TODO: implement initState
+    // implement initState
     _anicontroller = AnimationController(
         vsync: this, duration: Duration(milliseconds: 2000));
     _scaleController =
@@ -55,7 +55,7 @@ class _CustomHeaderExampleState extends State<CustomHeaderExample>
 
   @override
   void dispose() {
-    // TODO: implement dispose
+    // implement dispose
     _refreshController.dispose();
     _scaleController.dispose();
     _footerController.dispose();
@@ -65,7 +65,7 @@ class _CustomHeaderExampleState extends State<CustomHeaderExample>
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    // implement build
     return Container(
       child: SmartRefresher(
         enablePullUp: true,

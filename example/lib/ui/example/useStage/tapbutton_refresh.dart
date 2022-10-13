@@ -5,7 +5,6 @@
  */
 
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 
 /*
@@ -17,7 +16,7 @@ class TapButtonRefreshExample extends StatefulWidget {
 
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
+    // implement createState
     return _TapButtonRefreshExampleState();
   }
 }
@@ -61,7 +60,7 @@ class _TapButtonRefreshExampleState extends State<TapButtonRefreshExample> {
 
   @override
   void initState() {
-    // TODO: implement initState
+    // implement initState
     super.initState();
     _refreshController.headerMode.addListener(() {
       if (_refreshController.headerMode.value == RefreshStatus.idle) {
@@ -75,7 +74,7 @@ class _TapButtonRefreshExampleState extends State<TapButtonRefreshExample> {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    // implement build
     return Scaffold(
       body: SmartRefresher(
         controller: _refreshController,

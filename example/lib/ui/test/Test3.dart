@@ -1,6 +1,5 @@
 import 'dart:async';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 
@@ -23,7 +22,7 @@ class Test3State extends State<Test3> with TickerProviderStateMixin {
   void _getDatas() {
     data.add(Row(
       children: <Widget>[
-        FlatButton(
+        TextButton(
             onPressed: () {
               _refreshController
                   .requestRefresh(needCallback: false)
@@ -34,7 +33,7 @@ class Test3State extends State<Test3> with TickerProviderStateMixin {
               });
             },
             child: Text("请求刷新")),
-        FlatButton(
+        TextButton(
             onPressed: () {
               _refreshController
                   .requestLoading(needCallback: false)
@@ -72,7 +71,7 @@ class Test3State extends State<Test3> with TickerProviderStateMixin {
 
   @override
   void initState() {
-    // TODO: implement initState
+    // implement initState
     // for test #68 true-> false ->true
 //    Future.delayed(Duration(milliseconds: 3000), () {
 //      _enablePullDown = false;
@@ -126,13 +125,13 @@ class Test3State extends State<Test3> with TickerProviderStateMixin {
 
   @override
   void dispose() {
-    // TODO: implement dispose
+    // implement dispose
     super.dispose();
   }
 
   @override
   void didChangeDependencies() {
-    // TODO: implement didChangeDependencies
+    // implement didChangeDependencies
     super.didChangeDependencies();
   }
 
@@ -202,7 +201,7 @@ class CirclePainter extends CustomClipper<Path> {
 
   @override
   Path getClip(Size size) {
-    // TODO: implement getClip
+    // implement getClip
     final path = Path();
     if (!up) path.moveTo(0.0, size.height);
     path.cubicTo(
@@ -218,7 +217,7 @@ class CirclePainter extends CustomClipper<Path> {
 
   @override
   bool shouldReclip(CustomClipper oldClipper) {
-    // TODO: implement shouldReclip
+    // implement shouldReclip
     return oldClipper != this;
   }
 }

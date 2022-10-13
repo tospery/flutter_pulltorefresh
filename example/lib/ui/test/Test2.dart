@@ -65,15 +65,9 @@ class _Test2State extends State<Test2> with TickerProviderStateMixin {
     );
   }
 
-  void _onOffsetCallback(bool isUp, double offset) {
-    // if you want change some widgets state ,you should rewrite the callback
-    if (isUp) {
-    } else {}
-  }
-
   @override
   void initState() {
-    // TODO: implement initState
+    // implement initState
     super.initState();
     _controller = RefreshController(initialLoadStatus: LoadStatus.failed);
     _fetch();
@@ -81,7 +75,7 @@ class _Test2State extends State<Test2> with TickerProviderStateMixin {
 
   @override
   void didChangeDependencies() {
-    // TODO: implement didChangeDependencies
+    // implement didChangeDependencies
     super.didChangeDependencies();
   }
 
@@ -130,7 +124,7 @@ class _ItemState extends State<Item> {
 
   @override
   void dispose() {
-    // TODO: implement dispose
+    // implement dispose
     super.dispose();
   }
 }

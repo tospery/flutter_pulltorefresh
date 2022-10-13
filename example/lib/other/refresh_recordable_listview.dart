@@ -191,6 +191,7 @@ class _ReorderableListContent extends StatefulWidget {
     this.enablePullUp: false,
     this.onRefresh,
     this.onLoading,
+    // ignore: unused_element
     this.onOffsetChange,
   });
 
@@ -413,7 +414,6 @@ class _ReorderableListContentState extends State<_ReorderableListContent>
       setState(() {
         if (startIndex != endIndex) widget.onReorder(startIndex, endIndex);
         // Animates leftover space in the drop area closed.
-        // TODO(djshuckerow): bring the animation in line with the Material
         // specifications.
         _ghostController.reverse(from: 0.1);
         _entranceController.reverse(from: 0.1);
@@ -510,6 +510,7 @@ class _ReorderableListContentState extends State<_ReorderableListContent>
         ),
         child: _dragging == toWrap.key ? const SizedBox() : toWrapWithSemantics,
         childWhenDragging: const SizedBox(),
+        // ignore: deprecated_member_use
         dragAnchor: DragAnchor.child,
         onDragStarted: onDragStarted,
         // When the drag ends inside a DragTarget widget, the drag
